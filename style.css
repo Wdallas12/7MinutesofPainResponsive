@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+header,footer{
+    height: 100px;
+    border: 3px solid black;
+    clear: both;
+}
+section{
+    height: 300px;
+    width: 33.3333%;
+    border: 3px solid black;
+    float: left;
+}
+header{
+	text-align: center;
+}
+
+a:hover {
+	color: antiquewhite;
+	background: gray;
+}
+
+@media screen and (max-width: 400px){
+	header,footer{
+		background: rgba(157,65,114,1.00);
+	}
+	section{
+		clear: both;
+		width: 100%;
+		background: darkblue;
+	}
+}
+@media (min-width: 401px) and (max-width: 900px){
+	header,footer{
+		background: lightpink;
+	}
+	section{
+		background: lightblue;
+	}
+}
+@media all and (display-mode: fullscreen) {
+  body {
+    margin: 0;
+    border: 10px solid rgba(1,247,236,1.00);
+  }
+}
